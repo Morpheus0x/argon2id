@@ -4,6 +4,8 @@ This package provides a convenience wrapper around Go's [argon2](https://pkg.go.
 
 It enforces use of the Argon2id algorithm variant and cryptographically-secure random salts.
 
+This repository was forked from [github.com/alexedwards/argon2id](https://github.com/alexedwards/argon2id) to ensure that no changes to the upstream package may affect any of my projects using it. Since nothing in this package will likely change, unless the argon2 go implementation api changes, it is safe to do so. This is just done for my personal peace of mind.
+
 ## Usage
 
 ```go
@@ -12,7 +14,7 @@ package main
 import (
 	"log"
 
-	"github.com/alexedwards/argon2id"
+	"github.com/Morpheus0x/argon2id"
 )
 
 func main() {
